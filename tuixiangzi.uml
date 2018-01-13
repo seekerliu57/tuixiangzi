@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="tuixiangzi">
+  <packagedElement xmi:type="uml:Package" xmi:id="_jG-ZAPO6EeeDgYYPw1jybA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jHIKAPO6EeeDgYYPw1jybA" name="seeker">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jHIKAfO6EeeDgYYPw1jybA" name="hdx">
+        <packagedElement xmi:type="uml:Package" xmi:id="_jHIKAvO6EeeDgYYPw1jybA" name="ui">
+          <packagedElement xmi:type="uml:Class" xmi:id="_jHIKA_O6EeeDgYYPw1jybA" name="Sound">
+            <ownedAttribute xmi:id="_jM73EfO6EeeDgYYPw1jybA" name="path" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_jM73EvO6EeeDgYYPw1jybA" name="file" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_jNFoEPO6EeeDgYYPw1jybA" name="seq" visibility="package"/>
+            <ownedAttribute xmi:id="_jNFoEfO6EeeDgYYPw1jybA" name="midi" visibility="package"/>
+            <ownedAttribute xmi:id="_jNFoE_O6EeeDgYYPw1jybA" name="sign" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_jNOyAPO6EeeDgYYPw1jybA" name="loadSound" visibility="public"/>
+            <ownedOperation xmi:id="_jNOyAfO6EeeDgYYPw1jybA" name="mystop" visibility="package"/>
+            <ownedOperation xmi:id="_jNYjAPO6EeeDgYYPw1jybA" name="isplay" visibility="package">
+              <ownedParameter xmi:id="_jNYjAfO6EeeDgYYPw1jybA" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_jNYjAvO6EeeDgYYPw1jybA" name="setMusic" visibility="package">
+              <ownedParameter xmi:id="_jNYjA_O6EeeDgYYPw1jybA" name="e">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_kJlslfO6EeeDgYYPw1jybA" name="MainFrame" clientDependency="_kK7JUfO6EeeDgYYPw1jybA">
+            <generalization xmi:id="_kLE6UfO6EeeDgYYPw1jybA" general="_kLE6UPO6EeeDgYYPw1jybA"/>
+            <ownedAttribute xmi:id="_kLOrUPO6EeeDgYYPw1jybA" name="c" visibility="package"/>
+            <ownedAttribute xmi:id="_kLX1QPO6EeeDgYYPw1jybA" name="jl_wolf" visibility="package"/>
+            <ownedAttribute xmi:id="_kLqwMPO6EeeDgYYPw1jybA" name="jl_sheep3" visibility="package"/>
+            <ownedAttribute xmi:id="_kL0hMPO6EeeDgYYPw1jybA" name="jl_sheep1" visibility="package"/>
+            <ownedAttribute xmi:id="_kL-SMPO6EeeDgYYPw1jybA" name="jl_sheep2" visibility="package"/>
+            <ownedAttribute xmi:id="_kM3DAPO6EeeDgYYPw1jybA" name="sound" visibility="package" type="_kMt5VPO6EeeDgYYPw1jybA"/>
+            <ownedAttribute xmi:id="_kNA0APO6EeeDgYYPw1jybA" name="sheeps" visibility="package">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kNA0AfO6EeeDgYYPw1jybA" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kNA0AvO6EeeDgYYPw1jybA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_kNKlAPO6EeeDgYYPw1jybA" name="datas" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kNKlAfO6EeeDgYYPw1jybA" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kNKlAvO6EeeDgYYPw1jybA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_kNTu8PO6EeeDgYYPw1jybA" name="wx" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_kNdf8PO6EeeDgYYPw1jybA" name="wy" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_kNnQ8PO6EeeDgYYPw1jybA" name="total" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_kNnQ8fO6EeeDgYYPw1jybA" value="3"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_kNwa4PO6EeeDgYYPw1jybA" name="num" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_kNwa4fO6EeeDgYYPw1jybA"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_kK7JUfO6EeeDgYYPw1jybA" name="KeyListener" supplier="_kK7JUPO6EeeDgYYPw1jybA" client="_kJlslfO6EeeDgYYPw1jybA" contract="_kK7JUPO6EeeDgYYPw1jybA"/>
+            <ownedOperation xmi:id="_kNwa4vO6EeeDgYYPw1jybA" name="victory" visibility="private"/>
+            <ownedOperation xmi:id="_kN6L4PO6EeeDgYYPw1jybA" name="treeInit" visibility="private"/>
+            <ownedOperation xmi:id="_kN6L4fO6EeeDgYYPw1jybA" name="targetInit" visibility="private"/>
+            <ownedOperation xmi:id="_kN6L4vO6EeeDgYYPw1jybA" name="sheepInit" visibility="private"/>
+            <ownedOperation xmi:id="_kODV0PO6EeeDgYYPw1jybA" name="wolfInit" visibility="private"/>
+            <ownedOperation xmi:id="_kODV0fO6EeeDgYYPw1jybA" name="backgroundInit" visibility="private"/>
+            <ownedOperation xmi:id="_kONG0PO6EeeDgYYPw1jybA" name="setMainFrameUI" visibility="private"/>
+            <ownedOperation xmi:id="_kONG0fO6EeeDgYYPw1jybA" name="keyReleased" visibility="public">
+              <ownedParameter xmi:id="_kONG0vO6EeeDgYYPw1jybA" name="arg0"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_kONG0_O6EeeDgYYPw1jybA" name="keyTyped" visibility="public">
+              <ownedParameter xmi:id="_kONG1PO6EeeDgYYPw1jybA" name="arg0"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_kOW30PO6EeeDgYYPw1jybA" name="keyPressed" visibility="public">
+              <ownedParameter xmi:id="_kOW30fO6EeeDgYYPw1jybA" name="arg0"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_kK7JUPO6EeeDgYYPw1jybA" name="KeyListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_kLE6UPO6EeeDgYYPw1jybA" name="JFrame"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jJgvoPO6EeeDgYYPw1jybA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jJgvofO6EeeDgYYPw1jybA" name="io"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kKx_YfO6EeeDgYYPw1jybA" name="awt">
+      <packagedElement xmi:type="uml:Package" xmi:id="_kKx_Y_O6EeeDgYYPw1jybA" name="event"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jJp5kfO6EeeDgYYPw1jybA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_jJp5kvO6EeeDgYYPw1jybA" name="sound">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jJp5k_O6EeeDgYYPw1jybA" name="midi"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kKx_Z_O6EeeDgYYPw1jybA" name="swing"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_kMt5VPO6EeeDgYYPw1jybA" name="Sound"/>
+</uml:Model>
